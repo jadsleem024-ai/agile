@@ -1,7 +1,7 @@
 name: coach_panel
 description: Coach admin panel - trainees, programs, and progress tracking.
 publish_to: 'none'
-version: 1.7.1+11
+version: 1.7.1+12
 
 environment:
   sdk: '>=3.3.0 <4.0.0'
