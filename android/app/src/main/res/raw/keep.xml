@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  The notification sounds are looked up by name at runtime, by
+  flutter_local_notifications, so nothing in the Java/Kotlin sources ever
+  references R.raw.* statically. The release resource shrinker therefore reads
+  them as dead weight and strips them — it silently dropped sweet_text.mp3 from
+  a release build, leaving the set timer on the system default sound.
+
+  Listing them here pins both.
+-->
+<resources
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:keep="@raw/modern_ding,@raw/sweet_text" />
